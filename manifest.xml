@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Aaron Unger" />
+	<field key="version" value="1.0" />
+	<field key="description" value="A them plugin which allows an admin to edit the site CSS directly from a browser form." />
+	<field key="website" value="http://www.concord.org/" />
+	<field key="copyright" value="(C) The Concord Consortium 2010" />
+	<field key="licence" value="GNU Public License version 2" />
+	<field key="elgg_version" value="2010030101" />
+</plugin_manifest>
