@@ -1,6 +1,5 @@
 <?php
-  global $CONFIG;
-  include_once($CONFIG->pluginspath . 'theme_editable/helpers.php');
+  include_once(dirname(__FILE__) . '/helpers.php');
 	/**
 	 * Admin editable css theme support
 	 * 
@@ -18,10 +17,9 @@
 	set_context('admin');
 
 	// Load form view
-	$css_entity = get_css_entity();
-        $css_file = get_css_file();
+	$contents = read_css_file();
 
-	$body = elgg_view('theme_editable/settings',array('css_entity' => $css_entity, 'css_file' => $css_file));
+	$body = elgg_view('theme_editable/settings',array('contents' => $contents));
 
 	// Layout
 	$body = elgg_view_layout('two_column_left_sidebar','', $body);

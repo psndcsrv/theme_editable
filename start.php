@@ -4,7 +4,7 @@
   function theme_editable_init() {
     global $CONFIG;
     // make sure we have a css_file and if not, create a default one based on the system's css.php
-    $css_file = get_css_file();
+    init_css_file();
     register_action("theme_editable/save", false, $CONFIG->pluginspath . "theme_editable/actions/save.php", true);
   }
   

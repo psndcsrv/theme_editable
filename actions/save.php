@@ -15,9 +15,13 @@
 
 	$custom_css = get_input('custom_css', "", false);
 
-        write_css_file($custom_css);
+  write_css_file($custom_css);
 	
 	system_message(elgg_echo("theme_editable:save:success"));
+	
+	// invalidate the cache so our changes show up
+	datalist_set('simplecache_lastupdate',0);
+	elgg_filepath_cache_reset();
 		
 	forward($_SERVER['HTTP_REFERER']);
 
