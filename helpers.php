@@ -12,9 +12,13 @@
     return file_get_contents(get_css_file_path());
   }
   
+  function get_default_css_file_path() {
+    return ($CONFIG->path . 'views/default/css.php');
+  }
+
   function reset_css_file() {
     global $CONFIG;
-    $contents = file_get_contents($CONFIG->path . 'views/default/css.php');
+    $contents = file_get_contents(get_default_css_file_path());
     write_css_file($contents);
   }
   
