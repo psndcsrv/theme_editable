@@ -5,6 +5,6 @@
 	<field key="description" value="A theme plugin which allows an admin to edit the site CSS directly from a browser form." />
 	<field key="website" value="http://www.concord.org/" />
 	<field key="copyright" value="(C) The Concord Consortium 2010" />
-	<field key="license" value="GNU Public License version 2" />
+	<field key="license" value="GNU Lesser General Public License version 2.1" />
 	<field key="elgg_version" value="2010030101" />
 </plugin_manifest>

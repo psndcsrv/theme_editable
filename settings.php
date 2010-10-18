@@ -4,7 +4,7 @@
 	 * Admin editable css theme support
 	 * 
 	 * @package theme_editable
-	 * @license http://www.gnu.org/licenses/gpl.html GNU Public License version 2
+	 * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License version 2.1
 	 * @author Aaron Unger
 	 * @copyright (C) The Concord Consortium 2010
 	 */
